@@ -204,9 +204,6 @@ var CORPUS = {
 			if(lookup) html += lookup + '&nbsp;&nbsp;';
 			else html += UI_grammarEscapeUIFriendly( item ) + '&nbsp;&nbsp;'; //since it can be SP: w foreign chars.
 		}
-		//if(CORPUS.FEATURES_MAPPING[ features ]){
-		//	html += '<IMG SRC=../plugins/quran-grammar/Images/' + [ features ] + '.gif /><BR/> ';
-		//}
 		html += '<!--&nbsp;('+ UI_grammarEscapeUIFriendly(features) +')-->'; //(linkprefix?linkprefix : 'Features: ') + 
 		return html;
 	},
@@ -250,7 +247,7 @@ var CORPUS = {
 			if(corpus.misc)			str += '<li>' + CORPUS.UIgetMiscLink(corpus.misc) + '</li>';
 			if(corpus.features)
 				if(CORPUS.FEATURES_MAPPING[ corpus.features ])
-									str += '<li><IMG SRC=../plugins/quran-grammar/Images/' + [ corpus.features ] + '.gif /></li> ';
+									str += '<li><IMG SRC=plugins/quran-grammar/Images/' + [ corpus.features ] + '.gif /></li> ';
 			str += '</ul>';
 		}
 		var obj = {};
