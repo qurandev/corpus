@@ -1565,7 +1565,7 @@ var gq = {
 		status: function (playerID)
 		{
 			var playerID = playerID || this._getPlayerID();
-			return $(playerID).data("jPlayer").status;
+return false;//			return $(playerID).data("jPlayer").status;
 		},
 		
 		data: function (playerID)
